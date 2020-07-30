@@ -4,10 +4,11 @@
     height: 6rem;
     line-height: 6rem;
     display: flex;
+    border-bottom: 1px solid #E2E2E2;
 }
 
 .app-name {
-    width: 18.7rem;
+    width: 16.7rem;
     text-align: center;
     font-size: 1.4rem;
     font-weight: bold;
@@ -63,6 +64,6 @@
     }
 
     .caret {
-        margin-right: 4rem;
+        margin-right: 2rem;
     }
 }

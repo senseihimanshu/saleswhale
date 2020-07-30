@@ -1,0 +1,25 @@
+.app-sidenav {
+    background: #042235;
+    box-shadow: inset -4px 0px 4px rgba(2, 15, 24, 0.569466), inset 0px 1px 3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    height: 100vh;
+
+    & > * {
+        width: 100%;
+        height: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidenav-teams {
+        background: #2995DA;
+    }
+
+    .sidenav-help {
+        margin-top: auto;
+    }
+}
+

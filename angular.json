@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/fonts/Montserrat-Regular.css"
             ],
             "scripts": []
           },
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "saleswhale"
+    }
+  },
+  "defaultProject": "saleswhale",
+  "cli": {
+    "analytics": false
+  }
 }

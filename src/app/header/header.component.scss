@@ -1,7 +1,7 @@
 .teams {
     display: flex;
     justify-content: space-between;
-    height: 8rem;
+    height: 9.6rem;
     background-color: #fff;
     line-height: 8rem;
     .teams-logo {
@@ -57,5 +57,42 @@
 
 .teams-navigation {
     display: flex;
+    background-color: #fff;
+    &__nav {
+        font-size: 1.4rem;
+        color: #000000;
+        font-weight: bold;
+        display: inline-flex;
 
+        & > * {
+            margin-left: 4rem;
+            padding: 0 1.4rem 1rem 1.4rem;
+        }
+
+        &--all {
+            color: #0083E3;
+            border-bottom: 3px solid #0083E3;
+        }
+    }
+
+    .search {
+        margin-left: auto;
+        margin-right: 4rem;
+        color: #999999;
+        span{
+            margin-right: 1rem;
+            svg {
+                transform: translateY(3px);
+            }
+        }
+        input {
+            border: none;
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: 0.4px;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
 }

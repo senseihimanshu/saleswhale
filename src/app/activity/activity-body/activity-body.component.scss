@@ -1,0 +1,19 @@
+.activity-body-wrapper {
+    padding: 2rem;
+    font-size: 1.36rem;
+    display: flex;
+}
+
+.activity-body {
+    margin-left: 1rem;
+}
+
+.activity-text {
+    color: #444444;
+}
+
+.activity-createdAt {
+    color: #565656;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}

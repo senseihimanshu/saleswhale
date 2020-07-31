@@ -8,6 +8,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { TeamComponent } from './main/team/team.component';
+import { ActivityComponent } from './activity/activity.component';
+import { ActivityBodyComponent } from './activity/activity-body/activity-body.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { TeamComponent } from './main/team/team.component';
     NavbarComponent,
     HeaderComponent,
     MainComponent,
-    TeamComponent
+    TeamComponent,
+    ActivityComponent,
+    ActivityBodyComponent
   ],
   imports: [
     BrowserModule,

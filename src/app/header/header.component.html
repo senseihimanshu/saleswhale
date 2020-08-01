@@ -27,9 +27,13 @@
 
     <div class="teams-navigation">
         <nav class="teams-navigation__nav">
-            <a class="teams-navigation__nav--all">All</a>
-            <a class="teams-navigation__nav--favorites">Favorites</a>
-            <a class="teams-navigation__nav--archived">Archived</a>
+            <a class="teams-navigation__nav--all" [routerLink]="['/teams/all']" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact:
+                true}">All</a>
+            <a class="teams-navigation__nav--favorites" [routerLink]="['/teams/favorited']"
+                routerLinkActive="active">Favorited</a>
+            <a class="teams-navigation__nav--archived" [routerLink]="['/teams/archived']"
+                routerLinkActive="active">Archived</a>
         </nav>
 
         <div class="search">

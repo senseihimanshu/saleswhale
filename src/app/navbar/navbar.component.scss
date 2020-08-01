@@ -54,13 +54,15 @@
     }
 
     .route-profile-image {
-        background: url(https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_male2-512.png);
-        border-radius: 18px;
-        height: 3.4rem;
-        width: 3.4rem;
-        background-size: cover;
-        transform: translateY(11px);
-        margin-right: 4px;
+        margin-right: 0.8rem;
+        img{
+            border-radius: 18px;
+            height: 3.4rem;
+            width: 3.4rem;
+            background-size: cover;
+            transform: translateY(9px);
+            // margin-right: 2px;
+        }
     }
 
     .caret {

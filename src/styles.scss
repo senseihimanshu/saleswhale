@@ -67,3 +67,8 @@ a.btn.disabled,
 fieldset[disabled] a.btn {
   pointer-events: none;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

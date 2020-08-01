@@ -23,31 +23,34 @@ export class MainComponent implements OnInit {
 
       this.route.paramMap.subscribe((params) => {
         if (!params.has('type')) return;
-        if (params.get('type') === 'favorited' || params.get('type') === 'archived') {
+        if (params.get('type') === 'favorited' || params.get('type') === 'archived' || params.get('type') === 'all') {
           this.listType = params.get('type') as 'all' | 'favorited' | 'archived';
+          console.log('here');
+          console.log(this.listType);
+
+          if (this.listType === 'favorited') {
+            this.filteredTeams = this.teams.filter(team => {
+              return team.is_favorited
+            });
+            console.log(this.filteredTeams);
+            return;
+          }
+
+          if (this.listType === 'archived') {
+            this.filteredTeams = this.teams.filter(team => {
+              return team.is_archived;
+            });
+            console.log(this.filteredTeams);
+            return;
+          }
+
+          this.filteredTeams = this.teams;
+          console.log(this.filteredTeams);
         }
         else {
           this.router.navigateByUrl('/');
         }
       })
-
-      if (this.listType === 'favorited') {
-        this.filteredTeams = this.teams.filter(team => {
-          return team.is_favorited
-        });
-        console.log(this.filteredTeams);
-        return;
-      }
-
-      if (this.listType === 'archived') {
-        this.filteredTeams = this.teams.filter(team => {
-          return team.is_archived;
-        });
-        return;
-      }
-
-      this.filteredTeams = this.teams;
-      console.log(this.filteredTeams);
     });
   }
 

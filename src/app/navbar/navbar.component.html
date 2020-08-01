@@ -19,8 +19,10 @@
                         fill="white" />
                 </svg>
             </div>
-            <div class="route-profile-name">Hello, John</div>
-            <div class="route-profile-image"></div>
+            <div class="route-profile-name">Hello, {{ user?.name }}</div>
+            <div class="route-profile-image">
+                <img [src]="user?.avatar" />
+            </div>
             <div class="caret">
                 <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd"

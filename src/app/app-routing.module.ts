@@ -7,17 +7,12 @@ import { WrapperComponent } from './wrapper/wrapper.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'teams',
+    redirectTo: 'teams/all',
     pathMatch: 'full'
   },
   {
     path: 'teams',
     children: [
-      {
-        path: '',
-        component: WrapperComponent,
-        pathMatch: 'full'
-      },
       {
         path: ':type',
         component: WrapperComponent

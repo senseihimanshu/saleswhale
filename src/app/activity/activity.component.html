@@ -2,5 +2,5 @@
     <div class="activity-header">
         <p class="activity-header__text">Activity</p>
     </div>
-    <app-activity-body></app-activity-body>
+    <app-activity-body *ngFor="let activity of activities" [activity]="activity"></app-activity-body>
 </div>

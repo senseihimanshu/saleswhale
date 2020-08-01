@@ -1,0 +1,11 @@
+.layout {
+    display: flex;
+
+    .layout-rest {
+        width: calc(100vw - 6rem);
+    }
+}
+
+.flex {
+    display: flex;
+}

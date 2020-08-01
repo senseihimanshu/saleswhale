@@ -9,3 +9,13 @@
 .flex {
     display: flex;
 }
+
+.layout-sidenav {
+  position: fixed;
+  z-index: 1;
+}
+
+.layout-rest {
+    position: absolute;
+    right: 0;
+}
